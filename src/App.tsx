@@ -17,9 +17,9 @@ function App() {
       <Button variant="ghost" size="lg">click me</Button>
     </div>
     <div className="flex gap-4">
-      <Input label="Email" size="lg" defaultValue="neutral" />
-      <Input label="Email" size="lg" status="success" defaultValue="success" />
-      <Input label="Email" size="lg" status="danger" defaultValue="danger" />
+      <Input label="Email" inputSize="lg" defaultValue="neutral" />
+      <Input label="Email" inputSize="lg" status="success" defaultValue="success" />
+      <Input label="Email" inputSize="lg" status="danger" defaultValue="danger" />
     </div>
   </div>
   );

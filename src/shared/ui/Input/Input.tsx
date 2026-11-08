@@ -16,16 +16,16 @@ const STATUSES: Record<InputStatus, string> = {
   danger: "border-danger-500 bg-danger-50 text-danger-500",
 };
 
-export interface InputProps extends Omit<ComponentProps<"input">, "size"> {
-  label?: string;
-  size?: InputSize;
-  status?: InputStatus;
-  fullWidth?: boolean;
+export interface InputProps extends ComponentProps<'input'> {
+    label?: string
+    inputSize?: InputSize
+    status?: InputStatus
+    fullWidth?: boolean
 }
 
 export function Input({
   label,
-  size = "md",
+  inputSize = "md",
   status = "neutral",
   fullWidth = false,
   type = "text",
@@ -49,7 +49,7 @@ export function Input({
           "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500",
           "disabled:cursor-not-allowed disabled:opacity-50",
           STATUSES[status],
-          SIZES[size],
+          SIZES[inputSize],
           className,
         )}
         {...props}
