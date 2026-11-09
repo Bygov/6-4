@@ -1,6 +1,7 @@
 import { Button } from "./shared/ui/Button/Button"
 import { Input } from "./shared/ui/Input/Input"
 import { Card } from "./shared/ui/Card/Card";
+import { Badge } from "./shared/ui/Badge/Badge";
 
 function App() {
 
@@ -35,6 +36,11 @@ function App() {
         <h3 className="text-xl font-semibold">Card</h3>
         <p className="text-muted">Card description</p>
       </Card>
+    </div>
+    <div className="flex gap-4">
+      <Badge size="lg">Badge</Badge>
+      <Badge variant="success" size="lg">Badge</Badge>
+      <Badge variant="danger" size="lg">Badge</Badge>
     </div>
   </div>
 );
