@@ -1,5 +1,6 @@
 import { Button } from "./shared/ui/Button/Button"
 import { Input } from "./shared/ui/Input/Input"
+import { Card } from "./shared/ui/Card/Card";
 
 function App() {
 
@@ -21,8 +22,22 @@ function App() {
       <Input label="Email" inputSize="lg" status="success" defaultValue="success" />
       <Input label="Email" inputSize="lg" status="danger" defaultValue="danger" />
     </div>
+    <div className="flex gap-4">
+      <Card size="lg">
+        <h3 className="text-xl font-semibold">Card</h3>
+        <p className="text-muted">Card description</p>
+      </Card>
+      <Card variant="filled" size="lg">
+        <h3 className="text-xl font-semibold">Card</h3>
+        <p className="text-muted">Card description</p>
+      </Card>
+      <Card variant="elevated" size="lg">
+        <h3 className="text-xl font-semibold">Card</h3>
+        <p className="text-muted">Card description</p>
+      </Card>
+    </div>
   </div>
-  );
+);
 }
 
 export default App
